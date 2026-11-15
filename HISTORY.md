@@ -1,5 +1,13 @@
 # Riwayat adittamavincent-my-id
 
+## 2026-11-15T16:07+07:00 — Remove the Powered by Netlify badge
+
+- **Permintaan:** Vincent asked whether the Powered by Netlify badge in the lower-right corner could be hidden.
+- **Dikerjakan:** Checked the official Netlify instructions at https://docs.netlify.com/manage/projects/powered-by-netlify-badge/ using Firecrawl. Read the project's current settings with Netlify CLI: `built_with_badge_enabled` was `true`. Updated only that setting to `false` through `updateSite`; `hud_enabled` remained `false`. No website source changes or CSS hiding were needed.
+- **Hasil:** The API returned `built_with_badge_enabled: false`. A fresh HTTPS response matched `index.html` exactly, without the injected `/.netlify/scripts/hud` script. Refreshed the live browser page and visually confirmed the badge was absent; DOM checks found zero badge frames and zero injected HUD scripts. The change applies project-wide on the next request without a redeploy. Branch: `task/2026-11-15-remove-netlify-badge`; the commit containing this entry records the change.
+- **Keputusan:** Remove the badge for all visitors using Netlify's project setting. Continue the previously authorized automatic push for this website update.
+- **Terbuka:** None for this request.
+
 ## 2026-11-15T16:02+07:00 — Cleaner homepage using Hayyoth's layout
 
 - **Permintaan:** Update the personal website using Hayyoth as a reference; make it clearer and cleaner; use hyperlinks instead of visible email/Instagram details; push automatically. Vincent highlighted the topic-link row, then clarified that he wants the layout with a white background.
