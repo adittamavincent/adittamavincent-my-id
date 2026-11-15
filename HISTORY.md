@@ -1,5 +1,13 @@
 # Riwayat adittamavincent-my-id
 
+## 2026-11-15T16:02+07:00 — Cleaner homepage using Hayyoth's layout
+
+- **Permintaan:** Update the personal website using Hayyoth as a reference; make it clearer and cleaner; use hyperlinks instead of visible email/Instagram details; push automatically. Vincent highlighted the topic-link row, then clarified that he wants the layout with a white background.
+- **Dikerjakan:** Read hub and repository instructions. Located https://hayyoth.org/ with Firecrawl, inspected its HTML/CSS and browser rendering, and checked the highlighted playlist destination. Inspected public project sources in read-only clones under `TOOLS/Gh-Oss/` for factual descriptions. Updated `index.html` with a centered introduction, one labeled contact row, a readable project directory, description metadata and canonical URL. Documented the reference and adaptations in `DESIGN.md`; recorded white background and contact-label preferences in `AGENTS.md`.
+- **Hasil:** HTML validation (`pnpm dlx html-validate index.html`) and `git diff --check` passed, including after the final link correction. Browser checks at 1280px and 375px showed no horizontal overflow; white background, link destinations and visible keyboard focus were inspected. Notionpull returned HTTP 200. Kolam Ikan's former Vercel URL returned HTTP 404, so its link now opens the public GitHub repository. Task branch: `task/2026-11-15-clean-homepage`; commit is the one containing this entry.
+- **Keputusan:** Adapt the layout; use a pure white background. Preserve the plain HTML approach and confirmed bio. Push and production update are authorized for this task. No personal AI opinions were supplied or added.
+- **Terbuka:** Production push and Netlify deployment verification follow this checkpoint. Playlist extraction included an embedded 401 error; video contents were not reviewed and access was not retried.
+
 ## 2026-11-15T08:50+07:00 — Domain live with HTTPS
 
 - **Permintaan:** Check after Vincent updated DNS at idwebhost.
