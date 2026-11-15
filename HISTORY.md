@@ -1,5 +1,12 @@
 # Riwayat adittamavincent-my-id
 
+## 2026-11-15T08:50+07:00 — Domain live with HTTPS
+
+- **Permintaan:** Check after Vincent updated DNS at idwebhost.
+- **Dikerjakan:** Checked DNS at ns1.idwebhost.id, 1.1.1.1 and 8.8.8.8: apex A 75.2.60.5, www CNAME adittamavincent.netlify.app. Waited for Netlify to issue the certificate.
+- **Hasil:** https://adittamavincent.my.id returns HTTP/2 200 with the current page. Let's Encrypt certificate covers apex and www and expires 2027-02-13. http and www redirect 301 to https://adittamavincent.my.id/.
+- **Terbuka:** `PERSONAL/` folder still not listed in the hub AGENTS.md repo map.
+
 ## 2026-11-15T08:35+07:00 — Personal homepage, GitHub, Netlify
 
 - **Permintaan:** Simple personal website (plain HTML, almost no CSS) inspired by "Hayyoth", public GitHub repo under adittamavincent, linked to Netlify via CLI, domain adittamavincent.my.id, production. Content: about me, showcase links, email.
